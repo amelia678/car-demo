@@ -1,6 +1,9 @@
 .App {
-  text-align: center;
   padding: 50px;
   background-color: #b3f0ff;
   height: 100vh;
+}
+
+.MuiCard-root {
+  min-height: 300px;
 }
