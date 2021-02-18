@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import CarList from './views/CarList';
 
 function App() {
