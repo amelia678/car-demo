@@ -5,12 +5,21 @@ import {
   CardMedia,
   Divider,
   Grid,
+  makeStyles,
   Typography,
 } from "@material-ui/core";
 import React from "react";
 import { carData } from "../data/test-data";
 
+const useStyles = makeStyles({
+  price: {
+    color: "green",
+    fontWeight: 'bold'
+  },
+});
+
 const CarList = () => {
+  const classes = useStyles();
   return (
     <div>
       <Grid container spacing={2}>
@@ -43,7 +52,7 @@ const CarList = () => {
                     <Grid item>
                       <Divider></Divider>
                       <Box display="flex" justifyContent="flex-end">
-                        <p>{car.Price}</p>
+                        <p className={classes.price}>${car.Price.toLocaleString("en")}</p>
                       </Box>
                     </Grid>
                   </Grid>
