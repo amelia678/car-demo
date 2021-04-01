@@ -9,6 +9,7 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core";
+import placeholder from '../assets/placeholder.jpg'
 
 const useStyles = makeStyles({
   content: {
@@ -30,7 +31,7 @@ const ListCard = (props) => {
         <CardMedia
           component="img"
           src={
-            "https://www.autotrader.com/content/dam/autotrader/homepage/styles/DefaultDesk_Style_LUXURY.png"
+            car.showBridge ? "https://www.autotrader.com/content/dam/autotrader/homepage/styles/DefaultDesk_Style_LUXURY.png" : placeholder
           }
           title="Car image"
         />
